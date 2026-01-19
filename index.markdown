@@ -54,7 +54,7 @@ title: "Home"
     <h3>活動状況 | Activity status</h3> 
 
     <a href="https://abrasive-saturnalia-593.notion.site/ed31dc02bf774524a952dfaa26ef5f87?v=bfb2498db1ca4c3cbff8d9a8266d7cc9">研究サーベイはこちら</a><br><br>
-    <h3>発表 | Publication</h3>
+    <h3>業績 | Publication</h3>
     <h4>国内会議 | Domestic Conference</h4>
     ・藤井 俊輔, <strong>滝 之弥</strong>, 吉田 温登, 西川 菜月, 小森 政嗣, 植田 一博, 加藤 邦人, 原 武史, 熊崎 博一, 寺田 和憲: “目玉焼きの質感を決定づける潜在空間上の効用関数を用いた自閉スペクトラム症者と定型発達者の感覚処理特性の比較”, 第38回人工知能学会全国大会 JSAI2024
     <br>
@@ -78,7 +78,23 @@ title: "Home"
     <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12749/127490P/Visual-impression-estimation-system-considering-attribute-information/10.1117/12.2691716.short">・<strong>Taki, Yukiya</strong>, et al. "Visual impression estimation system considering attribute information" International Conference on Quality Control by Artificial Vision. July 2023.</a><br>
     <br>
     <a href="https://dl.acm.org/doi/abs/10.1145/3512730.3533717">・<strong>Taki Yukiya</strong>, et al. "Modeling Kansei Index for Images and Impression Estimation Using Fine Tuning." Proceedings of the 2022 International Joint Workshop on Multimedia Artworks Analysis and Attractiveness Computing in Multimedia. 2022.</a><br><br>
-    <h4>特許 | Patents</h4>
-    ・加藤 邦人，<strong>滝 之弥</strong>，吉田　温登，寺田　和憲，"大規模視覚言語モデルによる、判断根拠生成型の個別嗜好推定方法"（特願2024-020817/2024.2.15出願）
-    <br>
+    <h4>論文 | Paper</h4>
+    <a href="https://www.jstage.jst.go.jp/article/jjspe/91/3/91_411/_article/-char/ja">・吉田 温登, 滝 之弥, 加藤 邦人, 寺田 和憲 "大規模視覚言語モデルによる個人ごとの好み推定と判断根拠生成" 精密工学会誌 2025 年 91 巻 3 号 p. 411-417</a><br>
     <br><br>
+    <h4>特許 | Patents</h4>
+    ・加藤 邦人，<strong>滝 之弥</strong>，吉田　温登，寺田　和憲，"大規模視覚言語モデルによる、判断根拠生成型の個別嗜好推定方法"（特願2024-020817/2024.2.15出願）<br><br>
+    <a href="https://patentscope2.wipo.int/search/ja/WO2025115537">・加藤 邦人，山田　悠正, <strong>滝 之弥</strong>，吉田　温登，寺田　和憲..."大規模視覚言語モデルによる外観検査方法および判断根拠生成型推定方法"（公開番号:WO/2025/115537/, 公開日:2025.5.6, 国際出願番号:PCT/JP2024/039341, 国際出願日:06.11.2024）</a><br>
+    <br><br>
+
+<h2>Blogs</h2>
+    <ul>
+    {% for post in site.blogs limit:3 %}
+        <li>
+        <a href="{{ post.url }}">{{ post.title }}</a> — {{ post.date | date: "%Y-%m-%d" }}
+        </li>
+    {% endfor %}
+    </ul>
+
+    <div class="view-more">
+    <a href="/blog/" class="btn">View More →</a>
+    </div>
