@@ -34,7 +34,12 @@ plugins:
 
 header_pages:
   - index.markdown
-  - Blog.markdown
+  - blog.markdown
+
+collections:
+  blogs:
+    output: true
+    permalink: /blog/first-blog/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
