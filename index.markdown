@@ -72,6 +72,8 @@ title: "Home"
     <br>
     <br>
     ・第3回 深奥質感 領域班会議 2022年3月21日
+    <br>
+    <br>
     <h4>国際会議 | International  Conference</h4>
     ・Kazunori Terada, Hirokazu Kumazaki, Kazuhiro Ueda, Natsuki Nishikawa, Haruto Yoshida, <strong>Yukiya Taki</strong>, Shunsuke Fujii, Masashi Komori, Kunihito Kato: “Autistic Adults Have Selective Visual Appetite for Fried Eggs”, International Society for Autism Research INSAR2024<br>
     <br>
