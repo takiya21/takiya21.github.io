@@ -8,8 +8,21 @@ title: "Home"
   <p class="subtitle">AIエンジニア&研究者 | コンピュータビジョン・感性工学</p>
 </div>
 
+<!-- Table of Contents -->
+<div class="table-of-contents" style="background: #1a1a1a; border: 2px solid #4b5563; border-radius: 8px; padding: 1.5rem; margin-bottom: 3rem; width: fit-content;">
+  <h3 style="margin-top: 0; color: #ffffff; font-size: 1.1em;">📑 目次</h3>
+  <ul style="margin-left: 1.5rem; color: #e5e7eb;">
+    <li><a href="#profile" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">自己紹介 | Profile</a></li>
+    <li><a href="#blog" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">最新の記事 | Latest Articles</a></li>
+    <li><a href="#laboratory" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">研究室 | Laboratory</a></li>
+    <li><a href="#contact" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">連絡先 | Contact</a></li>
+    <li><a href="#activity" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">活動状況 | Activity Status</a></li>
+    <li><a href="#publications" style="color: #ffffff; text-decoration: none; transition: color 0.3s;">業績 | Publications</a></li>
+  </ul>
+</div>
+
 <!-- Profile Section -->
-<section class="profile-section">
+<section class="profile-section" id="profile">
   <div class="section-header">
     <span class="icon">👤</span>
     <h2>自己紹介 | Profile</h2>
@@ -48,15 +61,15 @@ title: "Home"
   </div>
 </section>
 <!-- Blog Section -->
-<section class="blog-section">
+<section class="blog-section" id="blog">
   <div class="section-header">
     <span class="icon">📝</span>
-    <h2>最新の記事</h2>
+    <h2>最新の記事 | Latest Articles</h2>
   </div>
   
   <div class="blog-grid">
     {% assign sorted_blogs = site.blogs | sort: "date" | reverse %}
-    {% for post in sorted_blogs limit:3 %}
+    {% for post in sorted_blogs limit:4 %}
       <div class="card blog-card">
         <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
         <p class="blog-date">📅 {{ post.date | date: "%Y年%m月%d日" }}</p>
@@ -77,10 +90,10 @@ title: "Home"
   }
 </style>
 <!-- Laboratory Section -->
-<section class="laboratory-section">
+<section class="laboratory-section" id="laboratory">
   <div class="section-header">
     <span class="icon">🏫</span>
-    <h2>研究室</h2>
+    <h2>研究室 | Laboratory</h2>
   </div>
   
   <div class="contact-section">
@@ -101,7 +114,7 @@ title: "Home"
 </section>
 
 <!-- Contact Section -->
-<section class="contact-section-main">
+<section class="contact-section-main" id="contact">
   <div class="section-header">
     <span class="icon">💬</span>
     <h2>連絡先 | Contact</h2>
@@ -124,10 +137,10 @@ title: "Home"
 </section>
 
 <!-- Activity Status Section -->
-<section class="activity-section">
+<section class="activity-section" id="activity">
   <div class="section-header">
     <span class="icon">📊</span>
-    <h2>活動状況</h2>
+    <h2>活動状況 | Activity Status</h2>
   </div>
   
   <div class="card">
@@ -137,7 +150,7 @@ title: "Home"
 </section>
 
 <!-- Publications Section -->
-<section class="publications-section">
+<section class="publications-section" id="publications">
   <div class="section-header">
     <span class="icon">📚</span>
     <h2>業績 | Publications</h2>
