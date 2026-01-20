@@ -1,0 +1,43 @@
+<!-- Space elements background -->
+<div class="space-container">
+  <!-- Planets - Realistic style - Far, small, dim, blurred -->
+  <div class="planet planet-1" style="position: fixed; top: -5%; right: 15%; width: 90px; height: 90px; background: radial-gradient(circle at 30% 25%, #ff7d4d, #d32f2f 30%, #a01010 60%, #3d0a0a 100%); border-radius: 50%; box-shadow: inset -15px -15px 30px rgba(0, 0, 0, 0.9), inset 10px 10px 20px rgba(255, 120, 60, 0.2), 0px 0px 30px rgba(255, 100, 50, 0.1); filter: blur(3px); opacity: 0.35; z-index: 0; animation: float 20s ease-in-out infinite;"><!-- Mars surface details --><div style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 20% 20%, rgba(255, 150, 80, 0.2), transparent 50%), radial-gradient(circle at 75% 80%, rgba(139, 16, 16, 0.3), transparent 50%); pointer-events: none;"></div></div>
+  <div class="planet planet-2" style="position: fixed; bottom: 5%; left: -3%; width: 75px; height: 75px; background: radial-gradient(circle at 35% 35%, #87ceeb 0%, #4a90e2 30%, #1e5a96 60%, #0a2844 100%); border-radius: 50%; box-shadow: inset -12px -12px 24px rgba(0, 0, 0, 0.75), inset 8px 8px 16px rgba(135, 206, 235, 0.15), 0px 0px 25px rgba(74, 144, 226, 0.1); filter: blur(2.5px); opacity: 0.3; z-index: 0; animation: float-slow 25s ease-in-out infinite;"><!-- Earth continents and clouds --><div style="position: absolute; width: 100%; height: 100%; border-radius: 50%; background: radial-gradient(circle at 30% 40%, rgba(34, 139, 34, 0.4), transparent 30%), radial-gradient(circle at 70% 50%, rgba(255, 255, 255, 0.5), transparent 25%), radial-gradient(circle at 50% 20%, rgba(34, 139, 34, 0.3), transparent 20%); pointer-events: none;"></div></div>
+  
+  <!-- Stars - Multiple layers with depth - Coming toward us -->
+  <div class="stars-layer" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none;">
+    <!-- Far stars - Small, slow, subtle -->
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.6); top: 5%; left: 10%; animation: star-approach-far 8s ease-in infinite; animation-delay: 0s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.5); top: 8%; left: 30%; animation: star-approach-far 8.5s ease-in infinite; animation-delay: 0.2s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.6); top: 12%; left: 55%; animation: star-approach-far 8.2s ease-in infinite; animation-delay: 0.4s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.5); top: 15%; left: 78%; animation: star-approach-far 8.8s ease-in infinite; animation-delay: 0.1s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.6); top: 3%; left: 88%; animation: star-approach-far 8.3s ease-in infinite; animation-delay: 0.3s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.5); top: 22%; left: 15%; animation: star-approach-far 8.6s ease-in infinite; animation-delay: 0.5s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.6); top: 18%; left: 42%; animation: star-approach-far 8.1s ease-in infinite; animation-delay: 0.2s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.5); top: 28%; left: 68%; animation: star-approach-far 8.7s ease-in infinite; animation-delay: 0.4s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.6); top: 35%; left: 25%; animation: star-approach-far 8.4s ease-in infinite; animation-delay: 0.1s;"></div>
+    <div class="star" style="position: absolute; width: 0.5px; height: 0.5px; background: rgba(255, 255, 255, 0.5); top: 40%; left: 85%; animation: star-approach-far 8.9s ease-in infinite; animation-delay: 0.3s;"></div>
+    
+    <!-- Mid-range stars - Medium size, medium speed -->
+    <div class="star" style="position: absolute; width: 1.2px; height: 1.2px; background: white; top: 25%; left: 35%; animation: star-approach-mid 6s ease-in infinite; animation-delay: 0s;"></div>
+    <div class="star" style="position: absolute; width: 1px; height: 1px; background: white; top: 45%; left: 20%; animation: star-approach-mid 6.5s ease-in infinite; animation-delay: 0.3s;"></div>
+    <div class="star" style="position: absolute; width: 1.2px; height: 1.2px; background: white; top: 55%; left: 60%; animation: star-approach-mid 6.2s ease-in infinite; animation-delay: 0.6s;"></div>
+    <div class="star" style="position: absolute; width: 1px; height: 1px; background: white; top: 65%; left: 40%; animation: star-approach-mid 6.8s ease-in infinite; animation-delay: 0.2s;"></div>
+    <div class="star" style="position: absolute; width: 1.2px; height: 1.2px; background: white; top: 35%; left: 75%; animation: star-approach-mid 6.3s ease-in infinite; animation-delay: 0.4s;"></div>
+    <div class="star" style="position: absolute; width: 1px; height: 1px; background: white; top: 50%; left: 85%; animation: star-approach-mid 6.1s ease-in infinite; animation-delay: 0.1s;"></div>
+    <div class="star" style="position: absolute; width: 1.2px; height: 1.2px; background: white; top: 70%; left: 15%; animation: star-approach-mid 6.7s ease-in infinite; animation-delay: 0.5s;"></div>
+    <div class="star" style="position: absolute; width: 1px; height: 1px; background: white; top: 60%; left: 50%; animation: star-approach-mid 6.4s ease-in infinite; animation-delay: 0.3s;"></div>
+    <div class="star" style="position: absolute; width: 1.2px; height: 1.2px; background: white; top: 42%; left: 10%; animation: star-approach-mid 6.9s ease-in infinite; animation-delay: 0.2s;"></div>
+    <div class="star" style="position: absolute; width: 1px; height: 1px; background: white; top: 75%; left: 72%; animation: star-approach-mid 6.5s ease-in infinite; animation-delay: 0.4s;"></div>
+    
+    <!-- Close stars - Large, fast, bright - Coming toward us -->
+    <div class="star" style="position: absolute; width: 2.5px; height: 2.5px; background: white; top: 30%; left: 50%; animation: star-approach-close 4s ease-in infinite; animation-delay: 0s; box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);"></div>
+    <div class="star" style="position: absolute; width: 2px; height: 2px; background: white; top: 55%; left: 30%; animation: star-approach-close 4.3s ease-in infinite; animation-delay: 0.2s; box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);"></div>
+    <div class="star" style="position: absolute; width: 2.5px; height: 2.5px; background: white; top: 40%; left: 70%; animation: star-approach-close 4.1s ease-in infinite; animation-delay: 0.4s; box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);"></div>
+    <div class="star" style="position: absolute; width: 2px; height: 2px; background: white; top: 68%; left: 60%; animation: star-approach-close 4.5s ease-in infinite; animation-delay: 0.1s; box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);"></div>
+    <div class="star" style="position: absolute; width: 2.5px; height: 2.5px; background: white; top: 52%; left: 80%; animation: star-approach-close 4.2s ease-in infinite; animation-delay: 0.3s; box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);"></div>
+    <div class="star" style="position: absolute; width: 2px; height: 2px; background: white; top: 62%; left: 25%; animation: star-approach-close 4.4s ease-in infinite; animation-delay: 0.5s; box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);"></div>
+    <div class="star" style="position: absolute; width: 2.5px; height: 2.5px; background: white; top: 45%; left: 15%; animation: star-approach-close 4.6s ease-in infinite; animation-delay: 0.2s; box-shadow: 0 0 8px rgba(255, 255, 255, 0.8);"></div>
+    <div class="star" style="position: absolute; width: 2px; height: 2px; background: white; top: 72%; left: 45%; animation: star-approach-close 4.3s ease-in infinite; animation-delay: 0.4s; box-shadow: 0 0 6px rgba(255, 255, 255, 0.7);"></div>
+  </div>
+</div>

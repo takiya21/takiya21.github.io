@@ -3,7 +3,9 @@ layout: page
 title: "Home"
 ---
 
-<div class="hero-section">
+{% include space-background.html %}
+
+<div class="hero-section" style="position: relative; z-index: 2;">
   <h1>Yukiya Taki</h1>
   <p class="subtitle">AIエンジニア&研究者 | コンピュータビジョン・感性工学</p>
 </div>
