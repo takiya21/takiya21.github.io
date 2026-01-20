@@ -39,7 +39,7 @@ header_pages:
 collections:
   blogs:
     output: true
-    permalink: /blog/first-blog/
+    sort_by: date
 
 # Exclude from processing.
 # The following items will not be processed, by default.

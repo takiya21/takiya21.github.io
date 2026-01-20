@@ -47,7 +47,35 @@ title: "Home"
     </table>
   </div>
 </section>
+<!-- Blog Section -->
+<section class="blog-section">
+  <div class="section-header">
+    <span class="icon">📝</span>
+    <h2>最新の記事</h2>
+  </div>
+  
+  <div class="blog-grid">
+    {% assign sorted_blogs = site.blogs | sort: "date" | reverse %}
+    {% for post in sorted_blogs limit:3 %}
+      <div class="card blog-card">
+        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+        <p class="blog-date">📅 {{ post.date | date: "%Y年%m月%d日" }}</p>
+        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+        <a href="{{ post.url }}" class="read-more">続きを読む →</a>
+      </div>
+    {% endfor %}
+  </div>
+  
+  <div style="text-align: center; margin-top: 2rem;">
+    <a href="/blog" class="link-button">すべての記事を見る</a>
+  </div>
+</section>
 
+<style>
+  .contact-section-main {
+    margin-bottom: 3rem;
+  }
+</style>
 <!-- Laboratory Section -->
 <section class="laboratory-section">
   <div class="section-header">
@@ -218,31 +246,4 @@ title: "Home"
   </div>
 </section>
 
-<!-- Blog Section -->
-<section class="blog-section">
-  <div class="section-header">
-    <span class="icon">📝</span>
-    <h2>最新の記事</h2>
-  </div>
-  
-  <div class="blog-grid">
-    {% for post in site.blogs limit:3 %}
-      <div class="card blog-card">
-        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-        <p class="blog-date">📅 {{ post.date | date: "%Y年%m月%d日" }}</p>
-        <p class="blog-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
-        <a href="{{ post.url }}" class="read-more">続きを読む →</a>
-      </div>
-    {% endfor %}
-  </div>
-  
-  <div style="text-align: center; margin-top: 2rem;">
-    <a href="/blog" class="link-button">すべての記事を見る</a>
-  </div>
-</section>
 
-<style>
-  .contact-section-main {
-    margin-bottom: 3rem;
-  }
-</style>
