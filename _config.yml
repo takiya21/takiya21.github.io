@@ -34,10 +34,14 @@ plugins:
 
 header_pages:
   - index.markdown
+  - apps.markdown  
   - blog.markdown
 
 collections:
   blogs:
+    output: true
+    sort_by: date
+  apps:
     output: true
     sort_by: date
 
