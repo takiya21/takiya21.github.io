@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "シンプルメモ帳アプリを作ってみました"
+title: "シンプルメモ帳アプリ"
 date: 2026-01-20
 app_url: https://takiya21.github.io/WebAppTest/
 ---

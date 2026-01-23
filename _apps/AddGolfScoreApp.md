@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "ゴルフスコア管理アプリを作成しました"
+title: "レイク浜松カントリークラブ専用ゴルフスコア管理アプリ"
 date: 2026-01-23
 app_url: https://takiya21.github.io/Golf_Analytics/
 ---
